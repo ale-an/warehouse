@@ -4,6 +4,7 @@
 
 /.vs
 */obj
+**/obj
 */bin
 .idea
 packages/

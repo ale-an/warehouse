@@ -1,4 +1,6 @@
-﻿namespace Models;
+﻿using Abstractions;
+
+namespace Models;
 
 /// <summary>
 /// Модель коробки.

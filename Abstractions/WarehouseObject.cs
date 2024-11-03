@@ -1,4 +1,4 @@
-﻿namespace Models;
+﻿namespace Abstractions;
 
 /// <summary>
 /// Базовая модель объекта склада.
@@ -49,10 +49,10 @@ public abstract class WarehouseObject
     /// Вес объекта склада.
     /// </param>
     protected WarehouseObject(
-        long id, 
-        int length, 
-        int width, 
-        int height, 
+        long id,
+        int length,
+        int width,
+        int height,
         double weight)
     {
         Id = id;
