@@ -20,8 +20,4 @@ public abstract class WarehouseEntity : Entity
     /// </summary>
     public int Height { get; set; }
 
-    /// <summary>
-    /// Вес объекта склада.
-    /// </summary>
-    public double Weight { get; set; }
 }

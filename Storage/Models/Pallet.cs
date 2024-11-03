@@ -5,4 +5,4 @@ namespace Storage.Models;
 /// <summary>
 /// Модель паллеты в базе данных.
 /// </summary>
-public sealed class Pallet : WarehouseExpirationalEntity;
+public sealed class Pallet : WarehouseEntity;

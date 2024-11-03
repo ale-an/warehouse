@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Storage\Logic\Logic.csproj", "{A9DFFFF2-7953-4F03-BCA1-5A6F916C437B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,9 +39,14 @@ Global
 		{D9FC1FC7-371D-4496-99AB-A93EF083C0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9FC1FC7-371D-4496-99AB-A93EF083C0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9FC1FC7-371D-4496-99AB-A93EF083C0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9DFFFF2-7953-4F03-BCA1-5A6F916C437B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9DFFFF2-7953-4F03-BCA1-5A6F916C437B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9DFFFF2-7953-4F03-BCA1-5A6F916C437B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9DFFFF2-7953-4F03-BCA1-5A6F916C437B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CA9EE063-AA71-4D3C-B266-AB00F6CBEB0C} = {AC5FBCC0-299F-4920-9A84-53B5117550C9}
 		{B0BD018A-A8E1-469F-97E2-BECDE066A9BB} = {AC5FBCC0-299F-4920-9A84-53B5117550C9}
+		{A9DFFFF2-7953-4F03-BCA1-5A6F916C437B} = {AC5FBCC0-299F-4920-9A84-53B5117550C9}
 	EndGlobalSection
 EndGlobal

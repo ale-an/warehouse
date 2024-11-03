@@ -8,6 +8,11 @@ namespace Storage.Models;
 public sealed class Box : WarehouseExpirationalEntity
 {
     /// <summary>
+    /// Вес объекта склада.
+    /// </summary>
+    public double Weight { get; set; }
+    
+    /// <summary>
     /// Дата производства.
     /// </summary>
     public required DateTime? ProductionDate { get; set; }
