@@ -32,9 +32,6 @@ public sealed class Pallet : WarehouseObject
     /// <param name="height">
     /// Высота паллеты.
     /// </param>
-    /// <param name="weight">
-    /// Вес паллеты.
-    /// </param>
     /// <param name="boxes">
     /// Коробки в паллете.
     /// </param>
@@ -46,9 +43,8 @@ public sealed class Pallet : WarehouseObject
         int length,
         int width,
         int height,
-        double weight,
         IReadOnlyCollection<Box> boxes)
-        : base(id, length, width, height, weight)
+        : base(id, length, width, height, boxes.Sum(x => x.Weight) + 30)
     {
         if (boxes.Count == 0)
         {
@@ -62,7 +58,6 @@ public sealed class Pallet : WarehouseObject
 
         ExpirationDate = boxes.Min(x => x.ExpirationDate);
         Boxes = boxes;
-        Weight = boxes.Sum(x => x.Weight) + 30;
     }
 
     /// <inheritdoc />
