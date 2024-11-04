@@ -1,4 +1,4 @@
-﻿namespace Abstractions;
+﻿namespace Storage.Abstractions;
 
 /// <summary>
 /// Базовая модель в базе данных.

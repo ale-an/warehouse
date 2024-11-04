@@ -11,12 +11,12 @@ public sealed class StorageContext
     /// Коллекция паллет.
     /// </summary>
     public List<Pallet> Pallets { get; } = new();
-    
+
     /// <summary>
     /// Коллекция коробок.
     /// </summary>
     public List<Box> Boxes { get; } = new();
-    
+
     /// <summary>
     /// Коллекция связующих сущностей.
     /// </summary>
@@ -43,23 +43,27 @@ public sealed class StorageContext
 
         for (int i = 1; i < 13; i++)
         {
-             Boxes.Add(new Box
-             {
-                 Id = i,
-                 Length = 2 * i,
-                 Width = 2 * i,
-                 Height = 2 * i,
-                 Weight = 2 * i,
-                 ExpirationDate = new DateTime(2025, i, 1),
-                 ProductionDate = i % 2 == 0 ? new DateTime(2024, 11, 3) : null
-             });
-             
-             PalletBoxes.Add(new PalletBox
-             {
-                 Id = i,
-                 PalletId = (i + 1) % 2,
-                 BoxId = i
-             });
+            Boxes.Add(new Box
+            {
+                Id = i,
+                Length = 2 * i,
+                Width = 2 * i,
+                Height = 2 * i,
+                Weight = 2 * i,
+                ExpirationDate = i <= 4
+                    ? new DateTime(2025, 1, 1)
+                    : i <= 8
+                        ? new DateTime(2025, 5, 1)
+                        : new DateTime(2025, 9, 1),
+                ProductionDate = i % 2 == 0 ? new DateTime(2024, 11, 3) : null
+            });
+
+            PalletBoxes.Add(new PalletBox
+            {
+                Id = i,
+                PalletId = (i + 1) / 2,
+                BoxId = i
+            });
         }
     }
 }

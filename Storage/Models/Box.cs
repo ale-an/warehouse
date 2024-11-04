@@ -1,4 +1,4 @@
-﻿using Abstractions;
+﻿using Storage.Abstractions;
 
 namespace Storage.Models;
 
@@ -11,7 +11,7 @@ public sealed class Box : WarehouseExpirationalEntity
     /// Вес объекта склада.
     /// </summary>
     public double Weight { get; set; }
-    
+
     /// <summary>
     /// Дата производства.
     /// </summary>

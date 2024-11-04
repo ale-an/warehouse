@@ -1,4 +1,4 @@
-﻿namespace Abstractions;
+﻿namespace Storage.Abstractions;
 
 /// <summary>
 /// Базовая модель объекта склада с истекающим сроком годности в базе данных.

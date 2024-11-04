@@ -1,4 +1,4 @@
-﻿using Abstractions;
+﻿using Storage.Abstractions;
 
 namespace Storage.Models;
 

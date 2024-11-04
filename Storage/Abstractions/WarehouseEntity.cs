@@ -1,4 +1,4 @@
-﻿namespace Abstractions;
+﻿namespace Storage.Abstractions;
 
 /// <summary>
 /// Базовая модель объекта склада в базе данных.
@@ -19,5 +19,4 @@ public abstract class WarehouseEntity : Entity
     /// Высота объекта склада.
     /// </summary>
     public int Height { get; set; }
-
 }

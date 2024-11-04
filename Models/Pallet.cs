@@ -48,12 +48,12 @@ public sealed class Pallet : WarehouseObject
     {
         if (boxes.Count == 0)
         {
-            throw new ArgumentException("Ошибка! Паллета не может быть пустой");
+            throw new ArgumentException("Ошибка! Паллета не может быть пустой.");
         }
 
         if (boxes.Any(x => x.Length > Length || x.Width > Width))
         {
-            throw new ArgumentException("Ошибка! Паллета не может быть меньше коробки");
+            throw new ArgumentException("Ошибка! Паллета не может быть меньше коробки.");
         }
 
         ExpirationDate = boxes.Min(x => x.ExpirationDate);
@@ -64,5 +64,12 @@ public sealed class Pallet : WarehouseObject
     public override int Volume()
     {
         return Boxes.Sum(x => x.Volume()) + base.Volume();
+    }
+
+    /// <inheritdoc />
+    public override string ToString()
+    {
+        return
+            $"Паллета (Id:{Id}) {Length}x{Width}x{Height}, Вес: {Weight} кг, Объем: {Volume()}, годен до{ExpirationDate: dd.MM.yyyy}";
     }
 }

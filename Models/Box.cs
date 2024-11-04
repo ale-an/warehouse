@@ -56,10 +56,17 @@ public sealed class Box : WarehouseObject
     {
         if (expirationDate == null && productionDate == null)
         {
-            throw new ArgumentException("Ошибка! Должна быть указана дата производства или срок годности");
+            throw new ArgumentException("Ошибка! Должна быть указана дата производства или срок годности.");
         }
 
         ProductionDate = productionDate;
         ExpirationDate = expirationDate ?? productionDate!.Value.AddDays(100);
+    }
+    
+    /// <inheritdoc />
+    public override string ToString()
+    {
+        return
+            $"Коробка (Id:{Id}) {Length}x{Width}x{Height}, Вес: {Weight} кг, Объем: {Volume()}, произведена {ProductionDate?.ToString("dd.MM.yyyy") ?? "неизвестно"}, годен до{ExpirationDate: dd.MM.yyyy}";
     }
 }

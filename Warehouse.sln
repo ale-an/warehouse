@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Storage\Logic\Logi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{25EAD6B5-37DE-4908-8E35-0294522E22D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{4A46BA72-A7D1-4A3B-8EA0-428E4173BB3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{25EAD6B5-37DE-4908-8E35-0294522E22D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25EAD6B5-37DE-4908-8E35-0294522E22D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25EAD6B5-37DE-4908-8E35-0294522E22D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A46BA72-A7D1-4A3B-8EA0-428E4173BB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A46BA72-A7D1-4A3B-8EA0-428E4173BB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A46BA72-A7D1-4A3B-8EA0-428E4173BB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A46BA72-A7D1-4A3B-8EA0-428E4173BB3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CA9EE063-AA71-4D3C-B266-AB00F6CBEB0C} = {AC5FBCC0-299F-4920-9A84-53B5117550C9}
